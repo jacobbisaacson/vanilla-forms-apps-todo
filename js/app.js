@@ -39,7 +39,11 @@ const app = {
 
     // push into the array
     this.todos.push(todo)
-  }
+
+    // reflect that change to the app's state 
+    // i.e. show the user something has changed
+    this.printTodos()
+  },
   // Ex.
   // 1. add a method here in the app object called addToDo that takes a string
   // as a param and instantiates a new ToDo using that string and stores it in 
@@ -67,8 +71,22 @@ const app = {
   // is pushed so that addingTodo automatically calls printTodos()
   // so that the user can see what they added on the screen
   // 4. a funny thing will happen if user adds a few todos -- how can you fix it?
+  printTodos: function() {
+    // grab the ul
+    const ul = document.querySelector('#todo-list')
 
+    // loop over this.todos
+    for(let i = 0; i < this.todos.length; i++) {
+      let todo = this.todos[i]
+      // create li
+      const li = document.createElement('li')
+      // set text 
+      li.innerText = todo.itemContent
+      // append to ul
+      ul.appendChild(li)
+    }
 
+  }
 
 
 }
