@@ -34,7 +34,16 @@ itemAddingForm.addEventListener('submit', (event) => {
   // event object!!! 
   event.preventDefault() // <--- stops the form submission
 
-  console.log("form submitted");
+  // find the input field
+  const itemTextInput = document.querySelector('#item-text-input')
+  // get the text from it
+  // log that text 
+  console.log(itemTextInput.value);
+
+  // clear the form 
+  itemTextInput.value = ""
+
+  // console.log("form submitted");
 })
 
 // note: form submission also automatically happens when you hit enter
@@ -42,6 +51,7 @@ itemAddingForm.addEventListener('submit', (event) => {
 
 
 // ex:
-// make the text in the form print tot he console when the form is submitted
+// make the text in the form print to the console when the form is submitted
+// google: "how do I get the input from a form field MDN"
 // bonus: also clear the input field when form is submitted
 
