@@ -21,10 +21,6 @@ class ToDo {
 
 }
 
-// test our todo Class
-const t = new ToDo('Testing 123')
-console.log(t);
-
 
 
 
@@ -39,9 +35,10 @@ const app = {
 
   addTodo: function(str) {
     // instantiate a ToDo
+    const todo = new ToDo(str)
 
     // push into the array
-
+    this.todos.push(todo)
   }
   // Ex.
   // 1. add a method here in the app object called addToDo that takes a string
@@ -111,9 +108,10 @@ itemAddingForm.addEventListener('submit', (event) => {
   const itemTextInput = document.querySelector('#item-text-input')
   // get the text from it
   // log that text 
-  console.log(itemTextInput.value);
+  // console.log(itemTextInput.value);
 
   // call app.addTodo, pass in the text from the input field
+  app.addTodo(itemTextInput.value)
 
   // clear the form 
   itemTextInput.value = ""
