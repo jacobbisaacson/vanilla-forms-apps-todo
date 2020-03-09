@@ -32,6 +32,25 @@ console.log(t);
 // we need somewhere for all of our app's logic and state to live
 // analogous to main(), game object, 
 const app = {
+  /// STATE -- all relevant information about the app at any point ///
+
+  // our instantiated todos should live here
+  todos: []
+
+
+  // Ex.
+  // 1. add a method here in the app object called addToDo that takes a string
+  // as a param and instantiates a new ToDo using that string and stores it in 
+  // the array of todos 
+
+  // 2. test by using your browser console
+
+  // 3. when all of that is working, call your addTodo from the event listener
+  // (the one on form submit) and pass in the text you got from the input field
+
+  // 4. at this point you should be able to type things into the form and then
+  // see them by checking app.todos in your console -- double check that this 
+  // is working
 
 }
 
