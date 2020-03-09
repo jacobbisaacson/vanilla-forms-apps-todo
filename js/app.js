@@ -40,3 +40,8 @@ itemAddingForm.addEventListener('submit', (event) => {
 // note: form submission also automatically happens when you hit enter
 // (while an element in the form is focused)
 
+
+// ex:
+// make the text in the form print tot he console when the form is submitted
+// bonus: also clear the input field when form is submitted
+
