@@ -25,8 +25,18 @@ const addItemButton = document.querySelector('#add-item')
 // this is a totally separate event
 
 const itemAddingForm = document.querySelector('#item-adding-form')
-itemAddingForm.addEventListener('submit', () => {
+itemAddingForm.addEventListener('submit', (event) => {
+  // default behavior of forms is sending info to server
+  // (that's how the internet works)
+  // but we don't want that here
+  // we want to PREVENT the DEFAULT behavior
+  // turns out we can do this using a method attached to the 
+  // event object!!! 
+  event.preventDefault() // <--- stops the form submission
+
   console.log("form submitted");
 })
 
+// note: form submission also automatically happens when you hit enter
+// (while an element in the form is focused)
 
