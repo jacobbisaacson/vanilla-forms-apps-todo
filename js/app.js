@@ -35,15 +35,20 @@ const app = {
   /// STATE -- all relevant information about the app at any point ///
 
   // our instantiated todos should live here
-  todos: []
+  todos: [],
 
+  addTodo: function(str) {
+    // instantiate a ToDo
 
+    // push into the array
+
+  }
   // Ex.
   // 1. add a method here in the app object called addToDo that takes a string
   // as a param and instantiates a new ToDo using that string and stores it in 
   // the array of todos 
 
-  // 2. test by using your browser console
+  // 2. test by using your browser console: app.addTodo('i added this')
 
   // 3. when all of that is working, call your addTodo from the event listener
   // (the one on form submit) and pass in the text you got from the input field
@@ -108,10 +113,11 @@ itemAddingForm.addEventListener('submit', (event) => {
   // log that text 
   console.log(itemTextInput.value);
 
+  // call app.addTodo, pass in the text from the input field
+
   // clear the form 
   itemTextInput.value = ""
 
-  // console.log("form submitted");
 })
 
 // note: form submission also automatically happens when you hit enter
