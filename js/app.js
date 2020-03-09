@@ -15,6 +15,7 @@ class ToDo {
 
     // stretch 
     // completed
+    this.completed = false
     // due date
 
   }
@@ -164,4 +165,12 @@ itemAddingForm.addEventListener('submit', (event) => {
 // make the text in the form print to the console when the form is submitted
 // google: "how do I get the input from a form field MDN"
 // bonus: also clear the input field when form is submitted
+
+
+
+
+// add a double click listener (event is dblclick)
+// log the todo item that was clicked in the handler
+
+
 
