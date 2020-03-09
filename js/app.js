@@ -86,6 +86,12 @@ const app = {
       const li = document.createElement('li')
       // set text 
       li.innerText = todo.itemContent
+
+      // use HTML dataset to store the array index directly in the tag
+      // https://developer.mozilla.org/en-US/docs/Web/API/HTMLOrForeignElement/dataset
+      // https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/data-*
+      li.dataset.todoIndex = i
+
       // append to ul
       ul.appendChild(li)
     }
@@ -182,6 +188,10 @@ toDoUl.addEventListener('dblclick', (event) => {
 
 
 
-
+const container = document.querySelector('#container')
+container.addEventListener('click', (event) => {
+  console.log(event.target)
+  console.log(event.target.dataset);
+})
 
 
