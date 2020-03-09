@@ -2,9 +2,42 @@ console.log("form inputs, to-do list, patterns for building apps");
 
 
 
+
+// Classes -- put at the top
+class ToDo {
+
+}
+
+
+
+
+
+
+// we need somewhere for all of our app's logic and state to live
+// analogous to main(), game object, 
+const app = {
+
+}
+
+
+
+
+
+
+
+/// listeners -- put them at the bottom 
+// they should just focus on collecting info -- they should not contain logic
+// logic lives in app or game object
+
+
+
+
+
+
+
 // add a listener to make a console log happen when the button is clicked
 // 1. grab button with id #add-item
-const addItemButton = document.querySelector('#add-item')
+// const addItemButton = document.querySelector('#add-item')
 
 // 2. add listener to the button that listens for click and provide that
 // listener with an arrow function to run 
