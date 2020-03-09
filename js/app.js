@@ -8,9 +8,9 @@ const addItemButton = document.querySelector('#add-item')
 
 // 2. add listener to the button that listens for click and provide that
 // listener with an arrow function to run 
-addItemButton.addEventListener('click', () => {
-  console.log("the add item button was clicked");
-})
+// addItemButton.addEventListener('click', () => {
+//   console.log("the add item button was clicked");
+// })
 
 
 // the above pattern works great for clicks but forms are designed
@@ -24,8 +24,9 @@ addItemButton.addEventListener('click', () => {
 // we want to listen for 'submit' on the form
 // this is a totally separate event
 
-
-
-
+const itemAddingForm = document.querySelector('#item-adding-form')
+itemAddingForm.addEventListener('submit', () => {
+  console.log("form submitted");
+})
 
 
