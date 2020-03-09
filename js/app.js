@@ -6,8 +6,24 @@ console.log("form inputs, to-do list, patterns for building apps");
 // Classes -- put at the top
 class ToDo {
 
+  constructor(itemContent) {
+    // the text of the todo item
+    this.itemContent = itemContent
+
+    // timestamp
+    this.time = new Date()
+
+    // stretch 
+    // completed
+    // due date
+
+  }
+
 }
 
+// test our todo Class
+const t = new ToDo('Testing 123')
+console.log(t);
 
 
 
