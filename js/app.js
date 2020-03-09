@@ -171,6 +171,17 @@ itemAddingForm.addEventListener('submit', (event) => {
 
 // add a double click listener (event is dblclick)
 // log the todo item that was clicked in the handler
+const toDoUl = document.querySelector('#todo-list')
+toDoUl.addEventListener('dblclick', (event) => {
+  // remember: event object is all info about the dblclick event
+  // including:
+  // event.target -- this is what was clicked on
+  // event.currentTarget -- this is the container you added the listener to
+  console.log(event.target);  
+})
+
+
+
 
 
 
