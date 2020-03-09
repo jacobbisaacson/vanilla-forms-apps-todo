@@ -75,7 +75,10 @@ const app = {
     // grab the ul
     const ul = document.querySelector('#todo-list')
 
-    // loop over this.todos
+    // delete the old lis
+    ul.innerHTML = ""
+
+    // loop over this.todos and reprint the list
     for(let i = 0; i < this.todos.length; i++) {
       let todo = this.todos[i]
       // create li
