@@ -96,6 +96,29 @@ const app = {
       ul.appendChild(li)
     }
 
+  },
+
+  markTaskComplete: function(indexOfTaskToComplete) {
+    console.log(`you are trying to mark task # ${indexOfTaskToComplete} as complete`)
+    // ex.
+
+    // 1. add a markComplete() method to the ToDo class. it should change the completed 
+    // bool to true. test it. commit when it works.
+
+    // 2. change this app.markTaskComplete() method to access the correct todo in the array
+    // and call markComplete() on it. test it. commit when it works.
+
+    /// (add code here for step 2) /// 
+
+    // 3. modify printTodos() so that if a todo is complete, it prints with a line through it
+    // use an if statement, and set css text-decoration: line-through. test it.  
+    // commit when it works.
+
+    // 4. in app.markTaskComplete, call printTodos() so the user sees the updated list
+    // with the line through the task
+    // call printTodos() here 
+    // test it. commit when everything works.
+
   }
 
 
@@ -183,7 +206,15 @@ toDoUl.addEventListener('dblclick', (event) => {
   // including:
   // event.target -- this is what was clicked on
   // event.currentTarget -- this is the container you added the listener to
-  console.log(event.target);  
+  // console.log(event.target);  
+  // console.log(event.target.dataset);
+
+  // we can now access the array index here
+  const indexOfItemClicked = event.target.dataset.todoIndex
+  console.log(indexOfItemClicked);
+
+  app.markTaskComplete(indexOfItemClicked)
+
 })
 
 
