@@ -54,6 +54,23 @@ const app = {
   // see them by checking app.todos in your console -- double check that this 
   // is working
 
+
+
+  // ex. 
+  // 0 -- make sure addTodo works
+  // 1. add another method to this app object that loops over the todos array
+  // and adds an <li> to the ul#todo-list
+  // name suggestions: printTodos or displayTodos etc
+  // 2. test: you should be able to add some todos with the form, then call printTodos() 
+  // from the console and they should appear on the screen
+  // 3. once that works, then call printTodos() from inside addTodo() after the ToDo
+  // is pushed so that addingTodo automatically calls printTodos()
+  // so that the user can see what they added on the screen
+  // 4. a funny thing will happen if user adds a few todos -- how can you fix it?
+
+
+
+
 }
 
 
