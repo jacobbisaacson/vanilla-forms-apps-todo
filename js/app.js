@@ -23,9 +23,6 @@ class ToDo {
 }
 
 
-
-
-
 // we need somewhere for all of our app's logic and state to live
 // analogous to main(), game object, 
 const app = {
@@ -161,6 +158,7 @@ const app = {
 // so instead of listening for `click` on button, 
 // we want to listen for 'submit' on the form
 // this is a totally separate event
+
 
 const itemAddingForm = document.querySelector('#item-adding-form')
 itemAddingForm.addEventListener('submit', (event) => {
